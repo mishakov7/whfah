@@ -1,0 +1,30 @@
+.main {
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: 
+          "title"
+          "overview"
+          "fridge"
+          "recipes"
+          "footer";
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 2em;
+  text-align: center;
+}
+.Overview {grid-area: overview;}
+.Title {grid-area: title;}
+.Fridge {grid-area: fridge;}
+.Footer {grid-area: footer;}
+.RecipeElement {
+  display: grid;
+  grid-area: recipes;
+  grid-gap: 1em;
+  grid-template-columns: 40% auto;
+  grid-template-areas:
+    "r_title  r_title"
+    "display  recipe";
+}
+.RecipeTitle {grid-area: r_title;}
+.RecipeDisplay {grid-area: display;}
+.Recipe {grid-area: recipe;}

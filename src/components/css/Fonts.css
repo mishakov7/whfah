@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Staatliches";
+    src: url(../assets/fonts/Staatliches-Regular\.ttf);
+}
+@font-face {
+    font-family: "Adlinnaka";
+    src: url(../assets/fonts/Adlinnaka-BoldDemo.ttf);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Satisfy";
+    src: url(../assets/fonts/Satisfy-Regular.ttf);
+}
+@font-face {
+    font-family: "Cookie";
+    src: url(../assets/fonts/Cookie-Regular.ttf)
+}

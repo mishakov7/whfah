@@ -1,0 +1,44 @@
+.RecipeDisplay {
+    background-color: #959595;
+    margin: -1em;
+    margin-left: -2em;
+    padding: 0 2em 0 2em;
+}
+.Recipe {
+    background-color: #dfdfdf;
+    margin: -1em -2em 0 0;
+    padding: 1em 2em 0 2em;
+}
+.RecipeDisplay, .Recipe {
+    padding-bottom: 5em;
+}
+.Overview {
+    height: 20em;
+    background-image: url(../assets/images/fridge.jpg);
+    background-size: cover;
+    margin: 0 -2em 0 -2em;
+    color: #fff;
+}
+.ov {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 1em;
+}
+.Source {
+    text-align: left;
+}
+.Source a {
+    color: #252525;
+    font-family: "Cookie";
+    transition: color 0.5s;
+}
+.Source a:hover {
+    color: #fff;
+}
+.Ingredients {
+    background-color: #87bc4a;
+    text-align: left;
+    padding: 1em 0;
+}
+.Ingredients li {
+    list-style: none;
+}
