@@ -12,7 +12,19 @@ import requests
 website = Flask(__name__)
 CORS(website)
 
-# this is where we get the list of ingredients from the user  ??? myaeb
+# # # # 
+#
+#  "global" keyword is being used to simulate a static variable. 
+#  without these, the backend wouldn't work at all.
+#
+# # # #
+
+#  The form data sent by react is sent and saved to this route.
+#
+#  REQUEST:    none
+#  RESPONSE:   list of ingredients
+#  RETURNS:    list of ingredients
+#
 @website.route("/userIngredients", methods = ['POST', 'GET'])
 def input_list():
    global ingredSent
@@ -22,6 +34,13 @@ def input_list():
 
    return ','.join(ingredSent)
 
+#  Displays the actual instructions for the recipe 
+#  AND posts the url to a different route.
+#
+#  REQUEST:    recipe url
+#  RESPONSE:   none
+#  RETURNS:    recipe instructions
+#
 @website.route("/recipe", methods = ['POST','GET'])
 def recipeRoute():
    global url
@@ -31,6 +50,13 @@ def recipeRoute():
    url = requests.post('http://localhost:5000/URL', rawURL)
    return "<h3>Instructions</h3>" + str(recipe)
 
+#  Displays the actual instructions for the recipe 
+#  AND posts the url to a different route.
+#
+#  REQUEST:    none
+#  RESPONSE:   recipe url
+#  RETURNS:    recipe url
+#
 @website.route("/URL", methods = ['POST','GET'])
 def urlRoute():
    global URL

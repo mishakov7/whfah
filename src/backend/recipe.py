@@ -19,16 +19,12 @@ def findRecipe(ingredient, ingredients):
    # Initialize counter
    count = 0
 
-   #  we also gotta figure out what to do if the user enters an ingredient
-   #  that's not in the database. must validate user input. figure out how 
-   #  these dictionaries work. this isnt that big of a problem
+   #  Query that pulls all records that contain the ingredient
    item = r_collection.find( {"ingredients": ingredient}, 
                            {"_id": 0, "url": 1, "tag": 1, "attribute": 1, 
                            "content": 1})
 
-   # Initialize list that will store query of recipes. Must be two dimensional
-   # ERROR ! count() is a deprecated method. they have an alterative, but 
-   # i gotta work on that. for now tho, this code runs fine
+   # Initialize list that will store query of recipes
    recipeQuery = [[x for x in range(4)] for y in range(item.count())]
 
    for recipe in item:
@@ -91,7 +87,7 @@ def getRecipe(ingredients):
       recipes = findRecipe(item, ingredientList)
 
       for i in range(len(recipes)):
-         # Parses the HTML from the recipe websites into text
+         # Parses the HTML from the recipe websites into elements
          recipeText = processRecipe(recipes[i][0], recipes[i][1], recipes[i][2], recipes[i][3])
          recipeList.append(recipeText)
          recipeURLs.append(recipes[i][0])

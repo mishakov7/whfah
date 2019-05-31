@@ -25,20 +25,32 @@
 }
 .Source {
     text-align: left;
+    background-color: #656565;
+    margin: 0 -2em 1em -2em;
+    padding: 0.5em 0.5em 0.5em 1em;
 }
 .Source a {
-    color: #252525;
-    font-family: "Cookie";
+    color: #efefef;
+    font-family: "Satisfy";
     transition: color 0.5s;
 }
 .Source a:hover {
-    color: #fff;
+    color: #959595;
 }
 .Ingredients {
     background-color: #87bc4a;
     text-align: left;
-    padding: 1em 0;
+    padding: 0.5em 2em 2em 2em;
 }
 .Ingredients li {
-    list-style: none;
+    list-style: none !important;
+    font-size: 24px;
+    background-color: rgba(255,255,255, 0.5);
+    margin: 1em -0.5em 1em -2em;
+    padding: 0.5em;
+    border-radius: 20px;
+    transition: background-color, 0.5s;
+}
+.Ingredients li:hover {
+    background-color: rgba(255,255,255,0.8);
 }

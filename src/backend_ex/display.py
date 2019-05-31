@@ -11,6 +11,9 @@ in_collection = database.ingredient_content
 
 # This function can be used for each of the extraneous elements
 def displayElement(collection, URL):
+
+    # Query to find the corresponding element by URL, 
+    # since all the URLs are unique
     item = collection.find( {"url": URL}, 
                            {"_id": 0, "url": 1, "tag": 1, "attribute": 1, 
                            "content": 1})
@@ -43,6 +46,10 @@ def displayElement(collection, URL):
             tag = i.get("tag")
             attribute = i.get("attribute")
             content = i.get("content")
+
+            # If there is no source or tag listed, the element will not display at all.
+            if  tag == "" or attribute == "" or content == "":
+                tag = '<div style="display: none;"></div>'
 
         display = parseElement(url, tag, attribute, content)
         return display
