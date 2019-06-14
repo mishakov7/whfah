@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "db52bdd30de7fd05f8a8c0688ac1865d",
-    "url": "/whfah/static/media/Staatliches-Regular.db52bdd3.ttf"
+    "revision": "ac5543cf30f1e464c0ae46bbbe2f9f9d",
+    "url": "/whfah/static/media/Adlinnaka-BoldDemo.ac5543cf.ttf"
   },
   {
     "revision": "1e259881e6e6c7ebac16",
@@ -16,20 +16,20 @@ self.__precacheManifest = [
     "url": "/whfah/static/js/2.10cb4975.chunk.js"
   },
   {
-    "revision": "78b50d8f2b76211b830a4e9411b86e24",
-    "url": "/whfah/static/media/Satisfy-Regular.78b50d8f.ttf"
-  },
-  {
     "revision": "a57bf31d5e94a758c57f328e9ca3270f",
     "url": "/whfah/static/media/Cookie-Regular.a57bf31d.ttf"
+  },
+  {
+    "revision": "78b50d8f2b76211b830a4e9411b86e24",
+    "url": "/whfah/static/media/Satisfy-Regular.78b50d8f.ttf"
   },
   {
     "revision": "1e259881e6e6c7ebac16",
     "url": "/whfah/static/js/main.57d00186.chunk.js"
   },
   {
-    "revision": "ac5543cf30f1e464c0ae46bbbe2f9f9d",
-    "url": "/whfah/static/media/Adlinnaka-BoldDemo.ac5543cf.ttf"
+    "revision": "db52bdd30de7fd05f8a8c0688ac1865d",
+    "url": "/whfah/static/media/Staatliches-Regular.db52bdd3.ttf"
   },
   {
     "revision": "5a798cdadc7cd321e3f72425b70bface",
